@@ -35,7 +35,8 @@
   "scripts": {
     "test": "mocha --timeout 10s -R spec test/test.js && mocha --timeout 10s -R spec test/load_dict_test.js",
     "install": "npx @mapbox/node-pre-gyp install --fallback-to-build",
-    "rebuild": "npx @mapbox/node-pre-gyp rebuild"
+    "rebuild": "npx @mapbox/node-pre-gyp rebuild",
+    "prepare": "git submodule update --init --recursive"
   },
   "binary": {
     "module_name": "nodejieba",
